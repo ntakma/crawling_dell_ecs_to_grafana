@@ -1,4 +1,5 @@
 # dell_emc_ecs
+tool using convert data on dashboard monitor of dell emc ecs to metric for influxdb and using grafana view metric
 
 ## install dependencies
 ``` 
