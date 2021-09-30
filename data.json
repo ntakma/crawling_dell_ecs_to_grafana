@@ -1,0 +1,13 @@
+{
+    "numNodes": 6,
+    "numGoodNodes": 6,
+    "numBadNodes": 0,
+    "numDisks": 270,
+    "numGoodDisks": 270,
+    "numBadDisks": 0,
+    "diskSpaceTotalCurrent": 3015900.0,
+    "diskSpaceFreeCurrent": 2890653.369435072,
+    "diskSpaceAllocatedCurrent": 125246.63056492805,
+    "alertsNumUnackError": 0,
+    "alertsNumUnackCritical": 0
+}
