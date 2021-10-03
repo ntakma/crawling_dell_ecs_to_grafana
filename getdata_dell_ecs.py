@@ -12,8 +12,8 @@ try:
 except AttributeError:
     # no pyopenssl support used / needed / available
     pass
-URL_DELL_ECS = "https://10.60.225.241/"
-Authorization = "ECS U2FsdGVkX19gryYaolffETOhXwexuyCfggVkpYJa89k="
+URL_DELL_ECS = "IP-SERVER"
+Authorization = "Authorizon-KEY"
 def open_session():
     url = URL_DELL_ECS+'login'
     header = {
@@ -21,7 +21,7 @@ def open_session():
         'Accept':'application/json, text/plain, */*',
         'Origin': URL_DELL_ECS,
         'Authorization': Authorization,
-        'Cookie': 'ECSAuthToken=; XSRF-TOKEN=; ECSUI_SESSION=c74a3b0daf9f1e1214f945dd0baec0b9637d4d06-LOGIN_ENCRYPT_KEY=391aa3c2b9b3a324f5855c8d22a6b014adf399574553903fc9d5273ed49aa16b'
+        'Cookie': 'ECSAuthToken=; XSRF-TOKEN=; ECSUI_SESSION='
     }
     resp = requests.get(url, headers=header, verify=False)
     text_resp = json.loads(resp.text)
